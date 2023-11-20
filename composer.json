@@ -1,0 +1,23 @@
+{
+    "name": "taksu-tech/taksu-inbox",
+    "description": "Taksu Inbox",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Taksu\\TaksuInbox\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Made Adi",
+            "email": "made.adi@taksu.tech"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "laravel/framework": "^10.0"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.13"
+    }
+}
