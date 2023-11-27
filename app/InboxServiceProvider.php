@@ -1,5 +1,7 @@
 <?php
 
+namespace Taksu\TaksuInbox;
+
 use Illuminate\Support\ServiceProvider as Base;
 
 class InboxServiceProvider extends Base
