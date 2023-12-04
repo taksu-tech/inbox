@@ -2,16 +2,17 @@
 
 namespace Taksu\TaksuInbox\Models;
 
-use Illuminate\Support\Str;
+use Illuminate\Database\Eloquent\Concerns\HasUlids;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
-use Illuminate\Database\Eloquent\Concerns\HasUlids;
+use Illuminate\Support\Str;
 
 class Broadcast extends Model
 {
-    use SoftDeletes, HasUlids;
+    use HasUlids, SoftDeletes;
 
     const STATUS_DRAFT = 'draft';
+
     const STATUS_PUBLISHED = 'published';
 
     protected $fillable = [
@@ -33,6 +34,6 @@ class Broadcast extends Model
 
     public function newUniqueId()
     {
-        return "brc-" . strtolower((string) Str::ulid());
+        return 'brc-'.strtolower((string) Str::ulid());
     }
 }

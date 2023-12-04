@@ -23,11 +23,12 @@ class InboxService
         $found->save();
 
         InboxRead::dispatch($found);
+
         return $found;
     }
 
     /**
-     * Create an inbox item, and send notification to the owner. 
+     * Create an inbox item, and send notification to the owner.
      */
     public function send(array $data)
     {

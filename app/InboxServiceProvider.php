@@ -8,6 +8,6 @@ class InboxServiceProvider extends Base
 {
     public function register()
     {
-        $this->loadMigrationsFrom(__DIR__ . "/../database/migrations");
+        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
     }
 }
