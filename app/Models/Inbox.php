@@ -8,10 +8,11 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Str;
+use Taksu\Restful\Traits\ModelCommonTrait;
 
 class Inbox extends Model
 {
-    use HasFactory, HasUlids, SoftDeletes;
+    use HasFactory, HasUlids, ModelCommonTrait, SoftDeletes;
 
     public const OWNER_TYPE_STAFF = 'staff';
 
