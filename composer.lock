@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "35f5c1041730f7980bb676c163f2809a",
+    "content-hash": "1b21dc4a765b90fef9a91a37d0b097bd",
     "packages": [
         {
             "name": "beste/clock",
@@ -6451,43 +6451,6 @@
                 }
             ],
             "time": "2023-11-30T11:38:21+00:00"
-        },
-        {
-            "name": "taksu-tech/laravel-restful",
-            "version": "v1.1.4",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/taksu-tech/laravel-restful.git",
-                "reference": "c4b0089d94cba78f049665be2e39726972187692"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/taksu-tech/laravel-restful/zipball/c4b0089d94cba78f049665be2e39726972187692",
-                "reference": "c4b0089d94cba78f049665be2e39726972187692",
-                "shasum": ""
-            },
-            "require": {
-                "laravel/framework": "^9.0 || ^10.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Taksu\\": "app/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "authors": [
-                {
-                    "name": "madeadi",
-                    "email": "made.adi@gmail.com"
-                }
-            ],
-            "description": "Restful extension for Laravel by Taksu Tech",
-            "support": {
-                "issues": "https://github.com/taksu-tech/laravel-restful/issues",
-                "source": "https://github.com/taksu-tech/laravel-restful/tree/v1.1.4"
-            },
-            "time": "2023-06-14T03:28:33+00:00"
         },
         {
             "name": "tijsverkoyen/css-to-inline-styles",
