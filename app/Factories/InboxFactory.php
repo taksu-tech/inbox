@@ -25,7 +25,7 @@ class InboxFactory extends Factory
     public function definition(): array
     {
         return [
-            'id' => fake()->uuid(),
+            'id' => (new Inbox)->newUniqueId(),
             'owner_type' => fake()->randomElement([
                 Inbox::OWNER_TYPE_STAFF,
                 Inbox::OWNER_TYPE_CAREGIVER,
@@ -39,13 +39,13 @@ class InboxFactory extends Factory
             'category' => fake()->randomElement([
                 'newsletter',
             ]),
-            'title' => fake()->title(),
-            'content' => fake()->text(20),
+            'title' => fake()->text(10),
+            'content' => fake()->sentence(10),
             'read_at' => now(),
             'created_at' => now(),
             'updated_at' => now(),
             'deleted_at' => null,
-            'response' => fake()->text(20),
+            'response' => fake()->sentence(2),
             'response_url' => fake()->url(),
             'responded_at' => now(),
             'can_respond_until' => now(),

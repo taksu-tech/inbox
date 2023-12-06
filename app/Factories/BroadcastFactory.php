@@ -25,8 +25,8 @@ class BroadcastFactory extends Factory
     public function definition(): array
     {
         return [
-            'id' => fake()->uuid(),
-            'title' => fake()->title(),
+            'id' => (new Broadcast)->newUniqueId(),
+            'title' => fake()->text(10),
             'category' => fake()->randomElement([
                 Broadcast::CATEGORY_ANNOUNCEMENT,
                 Broadcast::CATEGORY_NEWSLETTER,
@@ -38,7 +38,7 @@ class BroadcastFactory extends Factory
                 Broadcast::STATUS_PUBLISHED,
             ]),
             'published_at' => null,
-            'content' => fake()->sentence(),
+            'content' => fake()->sentence(10),
         ];
     }
 }
