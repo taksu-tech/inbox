@@ -39,6 +39,10 @@ class BroadcastFactory extends Factory
             ]),
             'published_at' => null,
             'content' => fake()->sentence(10),
+            'respond_option' => [
+                'Accept and sign',
+                'Deny',
+            ],
         ];
     }
 }

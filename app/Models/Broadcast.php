@@ -31,6 +31,7 @@ class Broadcast extends Model
         'can_respond_until',
         'is_respond_required',
         'is_signature_required',
+        'respond_option',
     ];
 
     protected $attributes = [
