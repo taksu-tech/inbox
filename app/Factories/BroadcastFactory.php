@@ -27,10 +27,10 @@ class BroadcastFactory extends Factory
         return [
             'id' => (new Broadcast)->newUniqueId(),
             'title' => fake()->text(10),
-            'category' => fake()->randomElement([
-                Broadcast::CATEGORY_ANNOUNCEMENT,
-                Broadcast::CATEGORY_NEWSLETTER,
-                Broadcast::CATEGORY_CONSENT,
+            'type' => fake()->randomElement([
+                Broadcast::TYPE_ANNOUNCEMENT,
+                Broadcast::TYPE_NEWSLETTER,
+                Broadcast::TYPE_CONSENT,
             ]),
             'can_respond_until' => now(),
             'status' => fake()->randomElement([

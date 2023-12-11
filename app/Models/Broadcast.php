@@ -17,18 +17,20 @@ class Broadcast extends Model
 
     const STATUS_PUBLISHED = 'published';
 
-    const CATEGORY_ANNOUNCEMENT = 'announcement';
+    const TYPE_ANNOUNCEMENT = 'announcement';
 
-    const CATEGORY_NEWSLETTER = 'newsletter';
+    const TYPE_NEWSLETTER = 'newsletter';
 
-    const CATEGORY_CONSENT = 'consent';
+    const TYPE_CONSENT = 'consent';
 
     protected $fillable = [
-        'category',
+        'type',
         'title',
         'content',
         'status',
         'can_respond_until',
+        'is_respond_required',
+        'is_signature_required',
     ];
 
     protected $attributes = [

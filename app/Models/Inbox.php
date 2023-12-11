@@ -27,7 +27,7 @@ class Inbox extends Model
         'id',
         'owner_type',
         'owner_id',
-        'category',
+        'type',
         'title',
         'content',
         'source_type',

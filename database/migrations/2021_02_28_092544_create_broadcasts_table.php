@@ -13,12 +13,14 @@ return new class extends Migration
     {
         Schema::create('broadcasts', function (Blueprint $table) {
             $table->string('id', 40)->primary();
-            $table->string('category')->nullable();
+            $table->string('type')->nullable();
             $table->string('title');
             $table->text('content')->nullable();
             $table->string('status');
             $table->dateTime('published_at')->nullable();
             $table->dateTime('can_respond_until')->nullable();
+            $table->boolean('is_respond_required')->default(true);
+            $table->boolean('is_signature_required')->default(true);
 
             $table->timestamps();
             $table->softDeletes();
