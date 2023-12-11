@@ -41,6 +41,7 @@ class Broadcast extends Model
     protected $casts = [
         'can_respond_until' => 'datetime',
         'published_at' => 'datetime',
+        'respond_option' => 'array',
     ];
 
     public function newUniqueId()
