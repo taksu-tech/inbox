@@ -13,7 +13,9 @@ class BroadcastSeeder extends Seeder
     public function run(): void
     {
         for ($i = 1; $i <= 3; $i++) {
-            Broadcast::factory()->create();
+            Broadcast::factory()->create([
+                'title' => 'Broadcast '.$i,
+            ]);
         }
     }
 }
