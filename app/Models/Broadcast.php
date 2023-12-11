@@ -31,7 +31,7 @@ class Broadcast extends Model
         'can_respond_until',
         'is_respond_required',
         'is_signature_required',
-        'respond_option',
+        'respond_options',
     ];
 
     protected $attributes = [
@@ -41,7 +41,7 @@ class Broadcast extends Model
     protected $casts = [
         'can_respond_until' => 'datetime',
         'published_at' => 'datetime',
-        'respond_option' => 'array',
+        'respond_options' => 'array',
     ];
 
     public function newUniqueId()

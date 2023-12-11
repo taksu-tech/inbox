@@ -21,7 +21,7 @@ return new class extends Migration
             $table->dateTime('can_respond_until')->nullable();
             $table->boolean('is_respond_required')->default(true);
             $table->boolean('is_signature_required')->default(true);
-            $table->json('respond_option')->nullable();
+            $table->json('respond_options')->nullable();
 
             $table->timestamps();
             $table->softDeletes();
