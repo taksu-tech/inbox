@@ -28,6 +28,7 @@ class Broadcast extends Model
         'title',
         'content',
         'status',
+        'published_at',
         'can_respond_until',
         'is_respond_required',
         'is_signature_required',
