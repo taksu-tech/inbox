@@ -23,6 +23,8 @@ return new class extends Migration
             $table->boolean('is_signature_required')->default(true);
             $table->json('respond_options')->nullable();
 
+            $table->json('metadata')->nullable();
+
             $table->timestamps();
             $table->softDeletes();
         });
