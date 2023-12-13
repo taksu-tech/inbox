@@ -49,18 +49,4 @@ class Broadcast extends Model
     {
         return 'brc-'.strtolower((string) Str::ulid());
     }
-
-    public function getMetaData(string $key): mixed
-    {
-        return $this->metadata[$key];
-    }
-
-    public function setMetaData(string $key, mixed $value): self
-    {
-        $moreInfo = collect($this->metadata);
-        $moreInfo[$key] = $value;
-        $this->metadata = $moreInfo->toArray();
-
-        return $this;
-    }
 }
