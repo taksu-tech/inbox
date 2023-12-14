@@ -25,6 +25,9 @@ return new class extends Migration
 
             $table->json('metadata')->nullable();
 
+            $table->string('created_by', 30)->nullable();
+            $table->string('updated_by', 30)->nullable();
+
             $table->timestamps();
             $table->softDeletes();
         });

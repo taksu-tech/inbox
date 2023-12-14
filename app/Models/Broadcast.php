@@ -32,6 +32,8 @@ class Broadcast extends Model
         'is_signature_required',
         'respond_options',
         'metadata',
+        'created_by',
+        'updated_by',
     ];
 
     protected $attributes = [
