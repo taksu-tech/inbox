@@ -13,13 +13,8 @@ class ResponseService
 
     /**
      * Submitting a response to an inbox.
-     *
-     * @param Inbox $inbox
-     * @param string $response
-     * @param string|null $url
-     * @return void
      */
-    public function respond(Inbox &$inbox, string $response, ?string $url = null): void
+    public function respond(Inbox &$inbox, string $response, string $url = null): void
     {
         $inbox->response = $response;
         if ($url) {
